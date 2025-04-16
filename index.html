@@ -4,36 +4,33 @@
   <meta charset="UTF-8">
   <title>Auto Redirect by Country</title>
   <script>
-    // Fungsi auto-redirect berdasarkan country code
     fetch('https://ipapi.co/json/')
       .then(response => response.json())
       .then(data => {
         const countryCode = data.country || 'XX';
 
-        // Daftar URL redirect per negara
         const redirects = {
-    target.All = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AWURAN"; // Redirects Non-targeted / all other visitors to this URL.
-    target.DE  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-JERMAN";  // Redirects DE Visitors to this URL.
-	target.US  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-US"; 
-	target.MX  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-MEXICO"; 
-	target.IN  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-INDIA";
-	target.GB  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-INGGRIS";
-	target.AU  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AUSTRALIS";
-	target.AT  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AUSTRIA";
-	target.BR  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-BRAZIL";
-	target.SE  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-SWEDIA";
-	target.CH  = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-SWISS;
-	target.ID  = "https://www.profitableratecpm.com/g01ubvvz?key=642165c8f35aff9e63a854fe2422650c";
+          'DE': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-JERMAN",
+          'US': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-US",
+          'MX': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-MEXICO",
+          'IN': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-INDIA",
+          'GB': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-INGGRIS",
+          'AU': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AUSTRALIS",
+          'AT': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AUSTRIA",
+          'BR': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-BRAZIL",
+          'SE': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-SWEDIA",
+          'CH': "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-SWISS",
+          'ID': "https://www.profitableratecpm.com/g01ubvvz?key=642165c8f35aff9e63a854fe2422650c"
         };
 
+        const defaultUrl = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AWURAN";
 
-        // Redirect sekarang
         const redirectUrl = redirects[countryCode] || defaultUrl;
         window.location.href = redirectUrl;
       })
       .catch(error => {
         console.error('Gagal mendeteksi lokasi:', error);
-        window.location.href = 'https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AWURAN';
+        window.location.href = "https://chhigjj.postoffrhub.com/s/954eb734f1d15?subsource=ALCEMEIST&ext_click_id=ALCEMEIST-AWURAN";
       });
   </script>
 </head>
